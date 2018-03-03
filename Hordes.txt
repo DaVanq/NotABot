@@ -1,0 +1,18 @@
+How much XP is needed to go from lvl 1 to 2?`45
+How is the Hordes player ladder organized on the home page?`fame and level`level and fame`fame`level
+What is the phrase to get the gold symbol in Hordes chat? `$g
+What is the phrase to get the Vanguard symbol in Hordes chat?`$0
+What is the phrase to get the Bloodlust symbol in Hordes chat?`$1
+What is the minimum character level for a clan to be created?`15
+How much gold is needed for the creation of a clan?`15,000`15000`15k
+How many characters wide(number) can a clan tag be?`4
+What is the original default hordes username?`Traveler
+Which is the PVE server?`Alpheos
+What is the highest level item available to equip as a regular player?`Protecteron`Fury
+Who is the creator/developer of the game?`Dek
+What is the general shape of the map on hordes? https://imgur.com/a/yuZi4 `Circle
+What is the latest alpha version?`25
+What two letters/theme describe Alpha 25, the latest update? `UI
+What is the highest level obtainable?`99
+True or False: Level 1000 is available. `False`F
+
