@@ -40,9 +40,9 @@ except FileNotFoundError:
 # Default settings that is created when a server begin's using Casino
 server_default = {
     "System Config": {
-        "Casino Name":        "Redjumpman",
+        "Casino Name":        "NotACasino",
         "Casino Open":        True,
-        "Chip Name":          "Jump",
+        "Chip Name":          "BotChips",
         "Chip Rate":          1,
         "Credit Rate":        1,
         "Default Payday":     100,
@@ -689,7 +689,7 @@ class Casino(CasinoBank):
             name = settings["System Config"]["Casino Name"]
             await self.bot.say(_("Your membership has been approved! Welcome to {} Casino!\nAs a "
                                  "first time member we have credited your account with 100 free "
-                                 "chips.\nHave fun!").format(name))
+                                 "chips.\nHave fun! :joy:").format(name))
 
     @casino.command(name="transfer", pass_context=True)
     @commands.cooldown(1, 5, commands.BucketType.user)
