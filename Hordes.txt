@@ -15,4 +15,15 @@ What is the latest alpha version?`25
 What two letters/theme describe Alpha 25, the latest update? `UI
 What is the highest level obtainable?`99
 True or False: Level 1000 is available. `False`F
-
+Name a class you can play as. `Shaman`Warrior`Archer`Mage
+What color is a shaman mainly?`Blue
+What color is a warrior mainly?`Brown
+What color is an archer mainly?`Green
+What level can a protecteron be equipped?`88
+What level can a soulkeeper be equipped?`83
+What level can coldforged fists be equipped?`82
+What level can an ancient talisman be equipped?`79
+What level can a stormsong be equipped?`85
+What level can a moss engima be equipped?`82
+What level can a hellfire warbow be equipped?`73
+What level can an iron piercer be equipped?`49
