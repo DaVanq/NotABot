@@ -83,13 +83,13 @@ class Defcon:
             return
 
         if channel.type != discord.ChannelType.text:
-            await self.bot.say("Channel must be a text channel")
+            await self.bot.say("Channel must be a text channel :face_palm:")
             return
         elif not channel.permissions_for(author).send_messages:
-            await self.bot.say("You're not allowed to send messages in that channel.")
+            await self.bot.say("You're not allowed to send messages in that channel....")
             return
         elif not channel.permissions_for(me).send_messages:
-            await self.bot.say("I'm not allowed to send messaages in that channel.")
+            await self.bot.say("Erm..I'm not allowed to send messaages in that channel.")
             return
 
         self.settings.setdefault(server.id, {}).update(channel=channel.id)
@@ -105,10 +105,10 @@ class Defcon:
             thumbnail_url = 'https://i.imgur.com/ynitQlf.gif'
             author = "This server is at DEFCON LEVEL {}.".format(level)
             subtitle = ("No known threats to your self esteem "
-                        "exist at this time.")
+                        "exist at this time!")
             instructions = ("- Partipaction in online games is encouraged\n"
-                            "- Remain vigilant of insider threats\n"
-                            "- Report all suspicious activity")
+                            "- Remain fully vigilant of insider threats\n"
+                            "- Report all suspicious activity to the authorities")
         elif level == '4':
             color = 0x00ff00
             thumbnail_url = 'https://i.imgur.com/sRhQekI.gif'
@@ -117,7 +117,7 @@ class Defcon:
             instructions = ("- Inhale deeply through your nose and "
                             "count to 5\n"
                             "- Take short breaks between games\n"
-                            "- Do not encourage trolls")
+                            "- Do not encourage trolls online")
         elif level == '3':
             color = 0xffff00
             thumbnail_url = 'https://i.imgur.com/xY9SkkA.gif'
@@ -125,7 +125,7 @@ class Defcon:
             subtitle = 'Sodium levels may exceed OSHA exposure limits.'
             instructions = ("- Use extreme caution when playing ranked games\n"
                             "- Log off non-essential communication channels\n"
-                            "- Put on your big boy pants")
+                            "- Put on your big boy pants and prepare the bunker")
         elif level == '2':
             color = 0xff0000
             thumbnail_url = 'https://i.imgur.com/cSzezRE.gif'
