@@ -18,7 +18,7 @@ class Ping:
         t1 = time.perf_counter()
         await self.bot.send_typing(channel)
         t2 = time.perf_counter()
-        await self.bot.say("Pseudo-Ping :ping_pong: --> {}ms".format(round((t2-t1)*1000)))
+        await self.bot.say("``Pseudo-Ping :ping_pong: --> {}ms``".format(round((t2-t1)*1000)))
 
 
 def setup(bot):
