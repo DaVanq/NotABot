@@ -77,7 +77,7 @@ Message Examples:
         if server.id in db:
             db[server.id]['Channel'] = channel.id
             fileIO(self.load, "save", db)
-            await self.bot.say("Channel changed.")
+            await self.bot.say("The channel for welcomer has been changed.")
             return
         if not ctx.message.server.me.permissions_in(channel).manage_channels:
             await self.bot.say("I dont have the `manage_channels` permission.")
@@ -90,7 +90,7 @@ Message Examples:
                 for i in invs:
                     db[server.id]["Invites"][i.url] = i.uses
                 fileIO(self.load, "save", db)
-                await self.bot.say("Channel set.")
+                await self.bot.say("The channel for welcomer has been set.")
                 
     @welcomer.command(pass_context=True)
     async def joinmessage(self, ctx, *, message : str):
@@ -103,7 +103,7 @@ Message Examples:
         if db[server.id]['joinmessage'] is not None:
             db[server.id]['joinmessage'] = message
             fileIO(self.load, "save", db)
-            await self.bot.say("join message has been changed.")
+            await self.bot.say("Join message has been changed.")
         elif db[server.id]["joinmessage"] is None:
             db[server.id]['joinmessage'] = message
             fileIO(self.load, "save", db)
@@ -121,11 +121,11 @@ Message Examples:
         if db[server.id]['leavemessage'] is not None:
             db[server.id]['leavemessage'] = message
             fileIO(self.load, "save", db)
-            await self.bot.say("leave message has been changed.")
+            await self.bot.say("Leave message has been changed.")
         elif db[server.id]["leavemessage"] is None:
             db[server.id]['leavemessage'] = message
             fileIO(self.load, "save", db)
-            await self.bot.say("leave message has been set.")
+            await self.bot.say("Leave message has been set.")
         
     @welcomer.command(pass_context=True)
     async def botrole(self, ctx, *, role : discord.Role):
@@ -140,7 +140,7 @@ Message Examples:
             fileIO(self.load, "save", db)
             await self.bot.say("The bot role has been set.")
         else:
-            await self.bot.say("I do not have the `manage_roles` permission!")
+            await self.bot.say("I do not have the `manage_roles` permission!!")
         
     @welcomer.command(pass_context=True)
     async def botroletoggle(self, ctx):
@@ -172,11 +172,11 @@ Message Examples:
         if db[server.id]["Embed"] is False:
             db[server.id]["Embed"] = True
             fileIO(self.load, "save", db)
-            await self.bot.say("Embeds enabled")
+            await self.bot.say("Embeds are enabled")
         elif db[server.id]["Embed"] is True:
             db[server.id]["Embed"] = False
             fileIO(self.load, "save", db)
-            await self.bot.say("Embeds disabled")
+            await self.bot.say("Embeds are disabled")
         
     @welcomer.command(pass_context=True)
     async def togglel(self, ctx):
@@ -189,11 +189,11 @@ Message Examples:
         if db[server.id]["leave"] is False:
             db[server.id]["leave"] = True
             fileIO(self.load, "save", db)
-            await self.bot.say("leave messages enabled.")
+            await self.bot.say("Leave messages have been toggled and enabled.")
         elif db[server.id]["leave"] is True:
             db[server.id]["leave"] = False
             fileIO(self.load, "save", db)
-            await self.bot.say("leave messages disabled.")
+            await self.bot.say("Leave messages have been toggled and disabled.")
             
     @welcomer.command(pass_context=True)
     async def togglej(self, ctx):
@@ -203,11 +203,11 @@ Message Examples:
         if db[server.id]["join"] is False:
             db[server.id]["join"] = True
             fileIO(self.load, "save", db)
-            await self.bot.say("join messages enabled.")
+            await self.bot.say("Join messages have been toggled and enabled.")
         elif db[server.id]["join"] is True:
             db[server.id]["join"] = False
             fileIO(self.load, "save", db)
-            await self.bot.say("join messages disabled.")
+            await self.bot.say("Join messages have been toggled and disabled.")
         
     @welcomer.command(pass_context=True)
     async def disable(self, ctx):
@@ -215,11 +215,11 @@ Message Examples:
         server = ctx.message.server
         db = fileIO(self.load, "load")
         if not server.id in db:
-            await self.bot.say("Welcomer was never enabled on this server. :face_palm::drool:")
+            await self.bot.say("Welcomer was never enabled on this server. :face_palm: :drool:")
             return
         del db[server.id]
         fileIO(self.load, "save", db)
-        await self.bot.say("Successfully deleted all settings for welcomer for this server.")
+        await self.bot.say("RIP! D: I have deleted all the settings for welcomer for this server and its back to its default.")
         
     async def on_member_join(self, member):
         server = member.server
