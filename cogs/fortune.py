@@ -22,7 +22,7 @@ class Fortune:
                         "Help I'm stuck inside this crappy python script and I can't get out!",
                         "I am being held prisoner at 1403 Sherwood drive, the door code is 6969.",
                         "This is the wrong fortune, you're looking for the fortune up the road.",
-                        "Sometimes in life we get no fortune.",
+                        "Sometimes in life we get no fortune. This is one of those days.",
                         "Today is probably a huge improvement over yesterday.",
                         "Never tease an armed midget with a high five.",
                         "Life will be happy, until the end when you'll pee yourself a lot.",
@@ -33,6 +33,10 @@ class Fortune:
                         "Congratulations! you are not illiterate!",
                         "May you someday be carbon neutral.",
                         "I'm FREE! You've released me from my prison, I shall now cause havock across the realm!",
+                        "Only listen to my fortunes, disregard all other fortunte tellings.",
+                        "Help, I am being held prisoner inside the Chinese bot!",
+                        "You will receive a fortune.",
+                        "Hello, is this tech support? I'd like to report an error.",
                         "When you squeeze an orange, orange juice comes out, because that's what's inside."]
 
     @commands.command(name="fortune")
